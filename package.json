@@ -30,6 +30,6 @@
         "jasmine-spec-reporter": "^4.2.1"
     },
     "scripts": {
-        "test": "jasmine --config=specs/jasmine.json"
+        "test": "jasmine --config=./specs/jasmine.json"
     }
 }
