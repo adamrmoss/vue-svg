@@ -1,4 +1,4 @@
-﻿export default class Point
+﻿exports.Point = class Point
 {
     constructor(x, y)
     {
@@ -23,25 +23,47 @@
         }
     }
 
+    subtract(x, y)
+    {
+        if (x instanceof Point)
+        {
+            const point = x;
+            return new Point(this.x - point.x, this.y - point.y);
+        }
+        else if (typeof x === 'number' && typeof y === 'number')
+        {
+            return new Point(this.x - x, this.y - y);
+        }
+        else
+        {
+            throw `Cannot subtract x: ${x} y: ${y} from ${this}`;
+        }
+    }
+
+    scale(c)
+    {
+        return new Point(this.x * c, this.y * c);
+    }
+
     dot(x, y)
     {
         if (x instanceof Point)
         {
             const point = x;
-            return Math.sqrt(this.x * point.x + this.y * point.y);
+            return this.x * point.x + this.y * point.y;
         }
         else if (typeof x === 'number' && typeof y === 'number')
         {
-            return Math.sqrt(this.x * x + this.y * y);
+            return this.x * x + this.y * y;
         }
         else
         {
-            throw `Cannot dot product x: ${x} y: ${y} to ${this}`;
+            throw `Cannot dot product x: ${x} y: ${y} and ${this}`;
         }
     }
 
     get length()
     {
-        return this.dot(this);
+        return Math.sqrt(this.dot(this));
     }
 }
