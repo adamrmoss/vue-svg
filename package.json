@@ -30,6 +30,6 @@
         "jasmine-spec-reporter": "^4.2.1"
     },
     "scripts": {
-        "test": "node specs/run-specs.js"
+        "test": "node specs/run.js"
     }
 }
