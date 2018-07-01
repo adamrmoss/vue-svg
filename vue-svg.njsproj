@@ -33,14 +33,18 @@
         <Content Include="README.md" />
     </ItemGroup>
     <ItemGroup>
-        <Folder Include="examples\" />
-        <Folder Include="specs\" />
         <Folder Include="src\" />
+        <Folder Include="dist\" />
+        <Folder Include="specs\" />
+        <Folder Include="examples\" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="src\**\*.*" />
+        <Content Include="src\**\*.js" />
+        <Content Include="dist\**\*.js" />
         <Content Include="specs\**\*.js" />
-        <Content Include="examples\**\*.*" />
+        <Content Include="examples\**\*.js" />
+        <Content Include="examples\**\*.html" />
+        <Content Include="examples\**\*.less" />
     </ItemGroup>
     <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
     <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
