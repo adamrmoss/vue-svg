@@ -13,15 +13,18 @@ exports.Animation =
             frameHandler: () => undefined
         };
     },
+
     mounted()
     {
         this.requestAnimationFrame();
     },
+
     methods: {
         requestAnimationFrame()
         {
             window.requestAnimationFrame(this.processFrame);
         },
+
         processFrame(timestamp)
         {
             this.deltaTime = timestamp - this.lastFrameTime;
