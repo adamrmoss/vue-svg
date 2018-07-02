@@ -1,13 +1,25 @@
 ﻿<!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Moss Logo Animation</title>
+    <script type="module" src="logo.js"></script>
+    <script id="logoTemplate" type="text/x-template">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+             name="logo" viewBox="0 0 1280 720">
+            <g>
+                <svg-polyline ref="m" initialPoints="468,642 260,390 336,305 260,220 385,80" />
+                <svg-polygon ref="o" initialPoints="555,530 430,390 555,250 680,390" />
+                <svg-polyline ref="s1" initialPoints="635,642 860,390 676,184 770,80" />
+                <svg-polyline ref="s2" initialPoints="805,642 1030,390 846,184 940,80" />
+            </g>
+        </svg>
+    </script>
 </head>
 <body>
     <main>
+        <logo />
     </main>
 </body>
 </html>

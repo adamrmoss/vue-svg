@@ -32,12 +32,15 @@
         "gulp-less": "^4.0.0",
         "jasmine": "^3.1.0",
         "jasmine-reporters": "^2.3.1",
-        "jasmine-spec-reporter": "^4.2.1"
+        "jasmine-spec-reporter": "^4.2.1",
+        "requirejs": "^2.3.5"
     },
+    "main": "./src/index.js",
     "files": [
         "dist/*.js"
     ],
     "scripts": {
+        "build": "node ./node_modules/requirejs/bin/r.js -o name=./src/index.js out=./dist/index.js",
         "test": "node specs/run.js"
     }
 }
