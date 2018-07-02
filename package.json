@@ -1,7 +1,7 @@
 {
-    "name": "vue-svg",
+    "name": "@adamrmoss/vue-svg",
     "version": "0.1.0",
-    "description": "Adamrmoss.Web",
+    "description": "A simple library for creating animated SVGs as Vue Components",
     "author": {
         "name": "Adam R Moss",
         "email": "adamrmoss@gmail.com"
