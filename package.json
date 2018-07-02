@@ -37,10 +37,10 @@
     },
     "main": "./src/index.js",
     "files": [
-        "dist/*.js"
+        "src/*.js"
     ],
     "scripts": {
-        "build": "node ./node_modules/requirejs/bin/r.js -o name=./src/index.js out=./dist/index.js",
+        "build": "npx r.js -o src/build.js",
         "test": "node specs/run.js"
     }
 }
