@@ -1,2 +1,2 @@
 # vue-svg
-A library for creating animated SVGs as Vue.js components
+A library for creating procedurally animated SVGs as Vue.js components
